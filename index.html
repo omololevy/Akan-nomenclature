@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
-    <title>Akan Name Generator</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js"></script>
-  </head>
-  <body>
+<head>
 
-  </body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+   
+    <title>AKAN</title>
+</head>
+
+<body class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12 page-header">
+                <div class="heading text-center">
+                    <a href="#"><img src="images/ghanamap.jpeg" alt="logo" title="Akan"></a>
+                    <h1>Welcome to Akan Names</h1>
+                    <p>Get your Akan name Easy and Fast</p>
+                    <div class="info">
+                        <p>In many parts of Ghana, and elsewhere in West Africa, a babies' traditional or middle names is determined by the day of the week they are born.
+                            <br> Enter your birthday and gender below to determine your Akan nomenclature name, a dialect of Akan and the most widely spoken language in Ghana:
+                            <br> You will also view your name or day of birth from the table below. <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-lg-12">
+                    <form class="form-group" value="refresh" name="myform" id="form" onsubmit="validation();">
+                        <label for="yearofbirth">Year of birth:</label><br>
+                        <input type="number" id="yearofbirth" placeholder="Year of Birth" name="yearofbirth"
+                            class="form-control"><br>
+                        <label for="monthofbirth">Month of birth:</label><br>
+                        <input type="number" id="monthofbirth" placeholder="Month of Birth" name="monthofbirth"
+                            class="form-control"><br>
+                        <label for="dateofbirth">Date of birth:</label><br>
+                        <input type="number" id="dateofbirth" placeholder="Date of Birth" name="dateofbirth"
+                            class="form-control"><br>
+                        <label for="gender">Gender:</label><br>
+                        <select name="gender" id="gender" class="form-control">
+                            <option value="" disabled selected>Choose Gender</option>
+                            <option name="gender" value="1">Male</option>
+                            <option name="gender" value="2">Female</option>
+                        </select><br>
+                        <button type="submit" class="btn btn-primary" onclick="akanFinder();" title="submit">Submit</button>&nbsp;
+                        <button type="button" class="btn btn-danger" onclick="formReset();" title="submit">Reset</button>
+                    </form>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script/index.js"></script>
+</body>
+
 </html>
