@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url("../images/ghana-button.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.heading{
+  margin-top: 3%;
+}
+.heading h1{
+  color: white;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.heading img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  float: left;
+  margin-top: -2%;
+}
+.heading p{
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: white;
+  margin-top: -1%;
+}
+form{
+  background-color:rgba(0,0,0,0.5);
+  justify-content: center;
+  padding: 20px;
+  width: 500px;
+  margin: auto;
+  color: white;
+  border-radius: 10px;
+}
+form label{
+  float: left;
+}
