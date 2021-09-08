@@ -10,7 +10,7 @@ body{
   background-position: center;
   background-size: 800px;
   background-color: rgb(131, 131, 131);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   text-align: left;
 }
 
@@ -34,6 +34,21 @@ body{
   margin-top: -2%;
 }
 
+.map img{
+  float: right;
+  height: max-content;
+  margin-left: 50px;
+  border-radius: 20px;
+}
+
+.tag img{
+  float: left;
+  height: max-content;
+  margin-right: 50px;
+  border-radius: 20px;
+
+}
+
 .heading p{
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
@@ -54,4 +69,13 @@ form{
 
 form label{
   float: left;
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
 }
