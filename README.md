@@ -1,5 +1,5 @@
 # Akan-Naming Nomenclature
-#### Determines the day of the week of birth, 8th September 2021
+#### Determines the day of the week of birth and gives Akan name, 6th September 2021
 #### By **Levy Omolo**
 ## Description
 This page allows the users to key in their date, month and year to determine the day (of the week) of their birth. They are also prompted to choose their gender, whether male or female to determine their Akan names.
