@@ -15,26 +15,26 @@ function validation()
     (yearofbirth < 1900) || ( yearofbirth > current_year)) 
     {
             swal("Please provide a valid year of birth between 1900-2020");
-            event.preventDefault(); 
+            Event.preventDefault(); 
             return false;
 
     }
     else if(monthofbirth == "" || monthofbirth.length >2 || monthofbirth > 12) 
     {
             swal("Please provide a valid month of birth between 1-12");
-            event.preventDefault();
+            Event.preventDefault();
             return false;
 
     }
     else if(dateofbirth == "" || dateofbirth.length >2 || dateofbirth > 31) {
             swal("Please provide a valid date of birth between 1-31");
-            event.preventDefault();
+            Event.preventDefault();
             return false;
 
     }
     else if(chooseGender == ""){
             swal("You must choose a gender");
-            event.preventDefault();
+            Event.preventDefault();
             return false;
     }
     else
@@ -50,9 +50,9 @@ function day(century, year, month, date)
 
 function akanFinder()
 {
-    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"];
-    var maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    var femaleName = ["Akosua", "Adwea", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    var days = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thurday", "Friday"];
+    var maleName = ["Kwame", "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi"];
+    var femaleName = ["Ama", "Akosua", "Adwea", "Abenaa", "Akua", "Yaa", "Afua"];
 
     var yearValue = document.getElementById("yearofbirth").value;
 
@@ -64,48 +64,64 @@ function akanFinder()
 
     var result=day(century,year,month,date).toFixed(); 
 
+    let bornDate = "You were born on ";
+    let akanName = ", and your Akan name is "
+
     if (gender == "1" && result == 0) {
-        swal("you were born on " +days[0]+ " and your akan name is " +maleName[0]);
-        event.preventDefault();
-      } else if (gender == "2" && result == 0) {
-        swal("you were born on " +days[0]+ " and your akan name is " +femaleName[0]);
-        event.preventDefault();
-      }else if (gender == "1" && result == 1) {
-        swal("you were born on " +days[1]+ " and your akan name is " +maleName[1]);
-        event.preventDefault();
-      } else if (gender == "2" && result == 1) {
-        swal("you were born on " +days[1]+ " and your akan name is " +femaleName[1]);
-        event.preventDefault();
-      }else if (gender == "1" && result == 2) {
-        swal("you were born on " +days[2]+ " and your akan name is " +maleName[2]);
-        event.preventDefault();
-      } else if (gender == "2" && result == 2) {
-        swal("you were born on " +days[2]+ " and your akan name is " +femaleName[2]);
-        event.preventDefault();
-      }else if (gender == "1" && result == 3) {
-        swal("you were born on " +days[3]+ " and your akan name is " +maleName[3]);
-        event.preventDefault();
-      } else if (gender == "2" && result == 3) {
-        swal("you were born on " +days[3]+ " and your akan name is " +femaleName[3]);
-        event.preventDefault();
-      }else if (gender == "1" && result == 4) {
-        swal("you were born on " +days[4]+ " and your akan name is " +maleName[4]);
-        event.preventDefault();
-      } else if (gender == "2" && result == 4) {
-        swal("you were born on " +days[4]+ " and your akan name is " +femaleName[4]);
-        event.preventDefault();
-      }else if (gender == "1" && result == 5) {
-        swal("you were born on " +days[5]+ " and your akan name is " +maleName[5]);
-        event.preventDefault();
-      } else if (gender == "2" && result == 5) {
-        swal("you were born on " +days[5]+ " and your akan name is " +femaleName[5]);
-        event.preventDefault();
-      }else if (gender == "1" && result == 6) {
-        swal("you were born on " +days[6]+ " and your akan name is " +maleName[6]);
-        event.preventDefault();
-      } else if (gender == "2" && result == 6) {
-        swal("you were born on " +days[6]+ " and your akan name is " +femaleName[6]);
-        event.preventDefault();
+        swal(bornDate +days[0]+ akanName +maleName[0]);
+        Event.preventDefault();
+      } 
+    else if (gender == "2" && result == 0) {
+        swal(bornDate +days[0]+ akanName +femaleName[0]);
+        Event.preventDefault();
+      }
+    else if (gender == "1" && result == 1) {
+        swal(bornDate +days[1]+ akanName +maleName[1]);
+        Event.preventDefault();
+      } 
+    else if (gender == "2" && result == 1) {
+        swal(bornDate +days[1]+ akanName +femaleName[1]);
+        Event.preventDefault();
+      }
+    else if (gender == "1" && result == 2) {
+        swal(bornDate +days[2]+ akanName +maleName[2]);
+        Event.preventDefault();
+      } 
+    else if (gender == "2" && result == 2) {
+        swal(bornDate +days[2]+ akanName +femaleName[2]);
+        Event.preventDefault();
+      }
+    else if (gender == "1" && result == 3) {
+        swal(bornDate +days[3]+ akanName +maleName[3]);
+        Event.preventDefault();
+      }
+    else if (gender == "2" && result == 3) {
+        swal(bornDate +days[3]+ akanName +femaleName[3]);
+        Event.preventDefault();
+      }
+    else if (gender == "1" && result == 4) {
+        swal(bornDate +days[4]+ akanName +maleName[4]);
+        Event.preventDefault();
+      }
+    else if (gender == "2" && result == 4) {
+        swal(bornDate +days[4]+ akanName +femaleName[4]);
+        Event.preventDefault();
+      }
+    else if (gender == "1" && result == 5) {
+        swal(bornDate +days[5]+ akanName +maleName[5]);
+        Event.preventDefault();
+      }
+    else if (gender == "2" && result == 5) {
+        swal(bornDate +days[5]+ akanName +femaleName[5]);
+        Event.preventDefault();
+      }
+    else if (gender == "1" && result == 6) {
+        swal(bornDate +days[6]+ akanName +maleName[6]);
+        Event.preventDefault();
+      }
+    else if (gender == "2" && result == 6) {
+        swal(bornDate +days[6]+ akanName +femaleName[6]);
+        Event.preventDefault();
       }
       
     
