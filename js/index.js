@@ -3,6 +3,7 @@ function formReset()
   document.getElementById("form").reset();
 }
 
+//Checking for the validity of the user input
 function validation()
 {
     var yearofbirth = document.myform.yearofbirth.value;
@@ -43,11 +44,13 @@ function validation()
     }
 }
 
+//Formula function to determine day of birth
 function day(century, year, month, date)
 {
     return ((((century/4)-2*century-1)+(5*year/4) + (26*(month+1)/10) + date)%7);
 }
 
+//Akan Name Determinant starts here.
 function akanFinder()
 {
     var days = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thurday", "Friday"];
@@ -122,7 +125,5 @@ function akanFinder()
     else if (gender == "2" && result == 6) {
         swal(bornDate +days[6]+ akanName +femaleName[6]);
         Event.preventDefault();
-      }
-      
-    
+      }   
 }

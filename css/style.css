@@ -46,7 +46,6 @@ body{
   height: max-content;
   margin-right: 50px;
   border-radius: 20px;
-
 }
 
 .heading p{
@@ -70,8 +69,6 @@ form{
 form label{
   float: left;
 }
-
-
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:600px) {
