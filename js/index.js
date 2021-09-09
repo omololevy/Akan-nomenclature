@@ -12,30 +12,29 @@ function validation()
     var chooseGender= document.myform.gender.value;;
     var current_year=new Date().getFullYear();
     
-    if((yearOfBirth == "") || (yearOfBirth.length !=4) || 
-    (yearOfBirth < 1900) || ( yearOfBirth > current_year)) 
+    if((yearOfBirth == "") || (yearOfBirth.length !=4) || (yearOfBirth < 1900) || ( yearOfBirth > current_year)) 
     {
-            swal("Please provide a valid year of birth between 1900-2020");
-            Event.preventDefault(); 
+            swal("Please provide a valid year of birth between 1900-2021");
+            event.preventDefault(); 
             return false;
 
     }
     else if(monthOfBirth == "" || monthOfBirth.length >2 || monthOfBirth > 12) 
     {
             swal("Please provide a valid month of birth between 1-12");
-            Event.preventDefault();
+            event.preventDefault();
             return false;
 
     }
     else if(dateOfBirth == "" || dateOfBirth.length >2 || dateOfBirth > 31) {
             swal("Please provide a valid date of birth between 1-31");
-            Event.preventDefault();
+            event.preventDefault();
             return false;
 
     }
     else if(chooseGender == ""){
             swal("You must choose a gender");
-            Event.preventDefault();
+            event.preventDefault();
             return false;
     }
     else
@@ -72,58 +71,58 @@ function akanFinder()
 
     if (gender == "1" && result == 0) {
         swal(bornDate +days[0]+ akanName +maleName[0]);
-        Event.preventDefault();
+        event.preventDefault();
       } 
     else if (gender == "2" && result == 0) {
         swal(bornDate +days[0]+ akanName +femaleName[0]);
-        Event.preventDefault();
+        event.preventDefault();
       }
     else if (gender == "1" && result == 1) {
         swal(bornDate +days[1]+ akanName +maleName[1]);
-        Event.preventDefault();
+        event.preventDefault();
       } 
     else if (gender == "2" && result == 1) {
         swal(bornDate +days[1]+ akanName +femaleName[1]);
-        Event.preventDefault();
+        event.preventDefault();
       }
     else if (gender == "1" && result == 2) {
         swal(bornDate +days[2]+ akanName +maleName[2]);
-        Event.preventDefault();
+        event.preventDefault();
       } 
     else if (gender == "2" && result == 2) {
         swal(bornDate +days[2]+ akanName +femaleName[2]);
-        Event.preventDefault();
+        event.preventDefault();
       }
     else if (gender == "1" && result == 3) {
         swal(bornDate +days[3]+ akanName +maleName[3]);
-        Event.preventDefault();
+        event.preventDefault();
       }
     else if (gender == "2" && result == 3) {
         swal(bornDate +days[3]+ akanName +femaleName[3]);
-        Event.preventDefault();
+        event.preventDefault();
       }
     else if (gender == "1" && result == 4) {
         swal(bornDate +days[4]+ akanName +maleName[4]);
-        Event.preventDefault();
+        event.preventDefault();
       }
     else if (gender == "2" && result == 4) {
         swal(bornDate +days[4]+ akanName +femaleName[4]);
-        Event.preventDefault();
+        event.preventDefault();
       }
     else if (gender == "1" && result == 5) {
         swal(bornDate +days[5]+ akanName +maleName[5]);
-        Event.preventDefault();
+        event.preventDefault();
       }
     else if (gender == "2" && result == 5) {
         swal(bornDate +days[5]+ akanName +femaleName[5]);
-        Event.preventDefault();
+        event.preventDefault();
       }
     else if (gender == "1" && result == 6) {
         swal(bornDate +days[6]+ akanName +maleName[6]);
-        Event.preventDefault();
+        event.preventDefault();
       }
     else if (gender == "2" && result == 6) {
         swal(bornDate +days[6]+ akanName +femaleName[6]);
-        Event.preventDefault();
+        event.preventDefault();
       }   
 }
