@@ -4,28 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity = "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" href="/images/ghana-button.jpeg" type="images/icon">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script> 
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       
@@ -37,10 +19,10 @@
             <div class="col-md-12 col-sm-12 col-lg-12 page-header">
                 <div class="heading">
                     <div class="tag">
-                      <a href="#"><img id="map" src="images/akan -name.jpeg" alt="logo" title="Akan"></a>
+                      <a href="#"><img src="images/akan -name.jpeg" alt="logo" title="Akan"></a>
                     </div>
                     <div class="map">
-                      <a href="#"><img id="map" src="images/ghanamap.jpeg" alt="logo" title="Akan"></a>
+                      <a href="#"><img src="images/ghanamap.jpeg" alt="logo" title="Akan"></a>
                     </div>
                     <h1 class="intro">Welcome to Akan-Naming Nomenclature</h1>
                     <br>
@@ -62,26 +44,25 @@
                     <form class="form-group" value="refresh" name="myform" id="form" onsubmit="validation();">
                         <label for="yearOfBirth">Year of birth:</label><br>
                         <input type="number" id="yearOfBirth" placeholder="Year of Birth" name="yearOfBirth"
-                            class="form-control"><br>
+                            class="form-control" required><br>
                         <label for="monthOfBirth">Month of birth:</label><br>
                         <input type="number" id="monthOfBirth" placeholder="Month of Birth" name="monthOfBirth"
-                            class="form-control"><br>
+                            class="form-control" required><br>
                         <label for="dateOfBirth">Date of birth:</label><br>
                         <input type="number" id="dateOfBirth" placeholder="Date of Birth" name="dateOfBirth"
-                            class="form-control"><br>
+                            class="form-control" required><br>
                         <label for="gender">Gender:</label><br>
-                        <select name="gender" id="gender" class="form-control">
+                        <select name="gender" id="gender" class="form-control" required>
                             <option value="" disabled selected>Choose Gender</option>
                             <option name="gender" value="1">Male</option>
                             <option name="gender" value="2">Female</option>
                         </select><br>
-                        <button type="submit" class="btn btn-primary" onclick="akanFinder();" title="submit">Submit</button>&nbsp;
+                        <button type="submit" class="btn btn-primary" onclick="akanFinder();" title="submit">Submit</button>
                         <button type="button" class="btn btn-danger" onclick="formReset();" title="submit">Reset</button>
                     </form>
                     
                 </div>
             </div>
-
         </div>
     </div>
     <script src="js/index.js"></script>
