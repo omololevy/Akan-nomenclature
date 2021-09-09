@@ -6,28 +6,28 @@ function formReset()
 //Checking for the validity of the user input
 function validation()
 {
-    var yearofbirth = document.myform.yearofbirth.value;
-    var monthofbirth = document.myform.monthofbirth.value;
-    var dateofbirth = document.myform.dateofbirth.value;
+    var yearOfBirth = document.myform.yearOfBirth.value;
+    var monthOfBirth = document.myform.monthOfBirth.value;
+    var dateOfBirth = document.myform.dateOfBirth.value;
     var chooseGender= document.myform.gender.value;;
     var current_year=new Date().getFullYear();
     
-    if((yearofbirth == "") || (yearofbirth.length !=4) || 
-    (yearofbirth < 1900) || ( yearofbirth > current_year)) 
+    if((yearOfBirth == "") || (yearOfBirth.length !=4) || 
+    (yearOfBirth < 1900) || ( yearOfBirth > current_year)) 
     {
             swal("Please provide a valid year of birth between 1900-2020");
             Event.preventDefault(); 
             return false;
 
     }
-    else if(monthofbirth == "" || monthofbirth.length >2 || monthofbirth > 12) 
+    else if(monthOfBirth == "" || monthOfBirth.length >2 || monthOfBirth > 12) 
     {
             swal("Please provide a valid month of birth between 1-12");
             Event.preventDefault();
             return false;
 
     }
-    else if(dateofbirth == "" || dateofbirth.length >2 || dateofbirth > 31) {
+    else if(dateOfBirth == "" || dateOfBirth.length >2 || dateOfBirth > 31) {
             swal("Please provide a valid date of birth between 1-31");
             Event.preventDefault();
             return false;
@@ -57,12 +57,12 @@ function akanFinder()
     var maleName = ["Kwame", "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi"];
     var femaleName = ["Ama", "Akosua", "Adwea", "Abenaa", "Akua", "Yaa", "Afua"];
 
-    var yearValue = document.getElementById("yearofbirth").value;
+    var yearValue = document.getElementById("yearOfBirth").value;
 
     var century = (yearValue.slice(0,2));
     var year = (yearValue.slice(2,4));
-    var month = document.getElementById("monthofbirth").value;
-    var date = document.getElementById("dateofbirth").value;
+    var month = document.getElementById("monthOfBirth").value;
+    var date = document.getElementById("dateOfBirth").value;
     var gender = document.getElementById("gender").value;
 
     var result=day(century,year,month,date).toFixed(); 
